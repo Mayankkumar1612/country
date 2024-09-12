@@ -1,0 +1,29 @@
+<div>
+  <div class="searchbox d-flex justify-content-start">
+    <div class="w-75 mt-2">
+      <form class="d-flex w-25" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+    </div>
+    <div class="mt-2">
+      <label for="dropdown">Choose an option:</label>
+      <select id="dropdown">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </select>
+    </div>
+  </div>
+  <div class="">
+    <!-- @for (country of data; track country.alpha3Code) {
+    <app-countrycard [item]="country"></app-countrycard>
+    } -->
+    <p>Today's item: {{ country }}</p>
+  </div>
+</div>
